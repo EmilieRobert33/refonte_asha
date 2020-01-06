@@ -4,7 +4,7 @@ DESCRIPTION:
 
 STANDOUT is an App/Saas website template designed to promote your mobile and web apps. It has a 
 clean and modern design with sections and site features that would help you promote and describe 
-your mobile apps and saas applications.
+your mobile apps and saas applications. modif
 
 ==================================================================================================
 
