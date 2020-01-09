@@ -428,7 +428,7 @@ ul.disc li::before {
 
 dt {
   margin: 0;
-  color: #00a650;
+  color: #eb5c0a;
 }
 
 dd {
@@ -548,7 +548,7 @@ form,
 }
 
 .pace .pace-progress {
-  background: #00a650;
+  background: #eb5c0a;
   position: fixed;
   z-index: 900;
   top: 0;
@@ -592,7 +592,7 @@ form,
   margin-left: -30px;
   margin-top: -30px;
   padding: 0;
-  background-color: #00a650;
+  background-color: #eb5c0a;
   border-radius: 100%;
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
   animation: sk-scaleout 1.0s infinite ease-in-out;
@@ -727,8 +727,8 @@ input[type="password"]:focus,
 textarea:focus,
 select:focus {
   color: #000000;
-  box-shadow: 0 0 5px rgba(0, 166, 80, 0.8);
-  border: 1px solid #00a650;
+  box-shadow: 0 0 5px rgba(235, 92, 10, 0.8);
+  border: 1px solid #eb5c0a;
 }
 
 label,
@@ -819,7 +819,7 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  -webkit-text-fill-color: #00a650;
+  -webkit-text-fill-color: #eb5c0a;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -1161,7 +1161,7 @@ input::-moz-focus-inner {
 }
 
 .stats-tabs li a:hover {
-  color: #00a650;
+  color: #eb5c0a;
 }
 
 .stats-tabs li a em {
@@ -1360,7 +1360,7 @@ input::-moz-focus-inner {
 
 .pgn .current,
 .pgn .current:hover {
-  background-color: #00a650;
+  background-color: #eb5c0a;
   color: white;
 }
 
@@ -1477,7 +1477,7 @@ input::-moz-focus-inner {
 
 .subhead {
   margin-top: 0;
-  color: #00a650;
+  color: #eb5c0a;
   font-size: 2.4rem;
   line-height: 1.1667;
   margin-bottom: .8rem;
@@ -1698,8 +1698,8 @@ input::-moz-focus-inner {
 }
 
 .header-logo img {
-  width: 140px;
-  height: 16px;
+  width: 100px;
+  height: 100px;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2067,7 +2067,7 @@ input::-moz-focus-inner {
   z-index: 3;
   display: block;
   content: "";
-  width: calc(50% - 200px);
+  width: 80%;
   height: 100vh;
   background-image: url(../images/illustration.jpg);
   background-origin: center top;
@@ -2078,6 +2078,7 @@ input::-moz-focus-inner {
   left: auto;
   right: 0;
   bottom: 0;
+  opacity: 40%;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2123,7 +2124,7 @@ input::-moz-focus-inner {
   font-size: 2.4rem;
   line-height: 1.6667;
   font-style: normal;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
   margin-top: 2.8rem;
   width: 45%;
 }
@@ -2671,6 +2672,13 @@ html.no-csstransitions .home-content__main {
 .s-about img {
   vertical-align: bottom;
 }
+
+.row.about-bottom-image {
+  -webkit-box-shadow: 7px 7px 17px 3px rgba(0,0,0,0.75); 
+  box-shadow: 7px 7px 17px 3px rgba(0,0,0,0.75);
+}
+
+
 
 /* ------------------------------------------------------------------- 
  * ## about-desc slider
@@ -3440,8 +3448,8 @@ html.no-csstransitions .home-content__main {
 
 .footer__subscribe #mc-form input[type=submit] {
   color: #FFFFFF;
-  background: #00a650;
-  border-color: #00a650;
+  background: #eb5c0a;
+  border-color: #eb5c0a;
   margin-right: 0;
   padding: 0 20px 0 24px;
   height: 6.4rem;
@@ -3551,7 +3559,7 @@ html.no-csstransitions .home-content__main {
 
 .footer__site-links li a:hover,
 .footer__site-links li a:focus {
-  color: #00a650;
+  color: #eb5c0a;
 }
 
 /* ------------------------------------------------------------------- 
@@ -3809,7 +3817,7 @@ a.page-header__search-trigger span {
 
 a.page-header__search-trigger:hover span,
 a.page-header__search-trigger:focus span {
-  color: #00a650;
+  color: #eb5c0a;
 }
 
 .page-header__search {
@@ -3924,7 +3932,7 @@ a.page-header__search-trigger:focus span {
 
 .page-header__overlay-close:hover::before,
 .page-header__overlay-close:hover::after {
-  background-color: #00a650;
+  background-color: #eb5c0a;
 }
 
 .page-header__overlay-close::before,
@@ -4191,7 +4199,7 @@ body.search-is-visible {
 
 .entries .more-link:hover,
 .entries .more-link:focus {
-  color: #00a650;
+  color: #eb5c0a;
 }
 
 .entries-wrap + .pagination-wrap {
@@ -4307,7 +4315,7 @@ body.search-is-visible {
 
 .blog-single-nav a:hover,
 .blog-single-nav a:focus {
-  color: #00a650;
+  color: #eb5c0a;
 }
 
 .blog-single-nav__prev {
