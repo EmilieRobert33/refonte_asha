@@ -570,7 +570,7 @@ form,
  * # preloader
  *
  * ------------------------------------------------------------------- */
-#preloader {
+/* #preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -626,8 +626,87 @@ form,
     opacity: 0;
   }
 
+} */
+/* ===================================================================
+ * # preloader
+ *
+ * ------------------------------------------------------------------- */
+ #preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #050505;
+  z-index: 800;
+  height: 100%;
+  width: 100%;
+  display: table;
 }
 
+.no-js #preloader, .oldie #preloader {
+  display: none;
+}
+
+#loader {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  
+}
+
+.line-scale-pulse-out > div {
+  background-color: #F15D09;
+  width: 4px;
+  height: 35px;
+  border-radius: 2px;
+  margin: 2px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  display: inline-block;
+  -webkit-animation: line-scale-pulse-out 0.9s -0.6s infinite cubic-bezier(0.85, 0.25, 0.37, 0.85);
+  animation: line-scale-pulse-out 0.9s -0.6s infinite cubic-bezier(0.85, 0.25, 0.37, 0.85);
+}
+
+.line-scale-pulse-out > div:nth-child(2), .line-scale-pulse-out > div:nth-child(4) {
+  -webkit-animation-delay: -0.4s !important;
+  animation-delay: -0.4s !important;
+}
+
+.line-scale-pulse-out > div:nth-child(1), .line-scale-pulse-out > div:nth-child(5) {
+  -webkit-animation-delay: -0.2s !important;
+  animation-delay: -0.2s !important;
+}
+
+@-webkit-keyframes line-scale-pulse-out {
+  0% {
+      -webkit-transform: scaley(1);
+      transform: scaley(1);
+  }
+  50% {
+      -webkit-transform: scaley(0.4);
+      transform: scaley(0.4);
+  }
+  100% {
+      -webkit-transform: scaley(1);
+      transform: scaley(1);
+  }
+}
+
+@keyframes line-scale-pulse-out {
+  0% {
+      -webkit-transform: scaley(1);
+      transform: scaley(1);
+  }
+  50% {
+      -webkit-transform: scaley(0.4);
+      transform: scaley(0.4);
+  }
+  100% {
+      -webkit-transform: scaley(1);
+      transform: scaley(1);
+  }
+}
 
 /* ===================================================================
  * # forms 
@@ -2037,8 +2116,8 @@ input::-moz-focus-inner {
   width: 100%;
   height: 100vh;
   min-height: 786px;
-  background-image: url(../images/pattern.jpg);
-  background-size: 760px 380px;
+  /* background-image: url(../images/pattern.jpg); */
+  /* background-size: 760px 380px; */
   position: relative;
   overflow: hidden;
 }
@@ -3071,10 +3150,10 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # pricing
+ * # partenaire
  *
  * ------------------------------------------------------------------- */
-.s-pricing {
+.s-partenaires {
   padding-top: 19.2rem;
   padding-bottom: 17.6rem;
   background-color: #FFFFFF;
@@ -3082,98 +3161,47 @@ html.no-csstransitions .home-content__main {
 }
 
 /* ------------------------------------------------------------------- 
+ * ## partenaire slider
+ * ------------------------------------------------------------------- */
+ .partenaires-outer {
+  margin-top: 3.6rem;
+  padding-bottom: 9rem;
+  text-align: center;
+  position: relative;
+}
+
+.partenaires__slide {
+  display: block;
+  margin-top: 3.5rem;
+  opacity: .55;
+  padding: 1.5rem 2.8rem;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.partenaires__slide:hover, .partenaires__slide:focus {
+  opacity: 1;
+}
+
+/* ------------------------------------------------------------------- 
  * ## pricing plan blocks
  * ------------------------------------------------------------------- */
-.plans {
-  margin-top: 6.4rem;
-}
 
-.item-plan__block {
-  background: #FFFFFF;
-  border-radius: 5px;
-  padding: 5.4rem 4rem 4.8rem;
-  margin-bottom: 4rem;
-}
 
-.item-plan__title {
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.2;
-  color: #000000;
-  margin: 0 0 1.6rem 0;
-}
-
-.item-plan__price,
-.item-plan__per {
-  display: inline-block;
-  margin-bottom: 0;
-}
-
-.item-plan__price {
-  font-size: 5.4rem;
-  line-height: 1.185;
-  font-weight: 800;
-  color: #000000;
-}
-
-.item-plan__per {
-  font-size: 1.6rem;
-  color: rgba(0, 0, 0, 0.4);
-  margin: 0 4px;
-}
-
-.item-plan__bottom-part {
-  margin-top: 3.2rem;
-}
-
-.item-plan--popular {
-  color: white;
-}
-
-.item-plan--popular ul.disc li::before {
-  background: #FFFFFF;
-}
-
-.item-plan--popular .item-plan__block {
-  background-color: #eb5c0a;
-  border: none;
-}
-
-.item-plan--popular .item-plan__title,
-.item-plan--popular .item-plan__price {
-  color: #FFFFFF;
-}
-
-.item-plan--popular .item-plan__per {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.item-plan--popular .btn {
-  background-color: #FFFFFF;
-  border: 0.2rem solid #FFFFFF;
-  color: #000000;
-}
-
-.item-plan--popular .btn:hover,
-.item-plan--popular .btn:focus {
-  background-color: #006933;
-  border: 0.2rem solid #006933;
-  color: #FFFFFF;
-}
 
 /* ------------------------------------------------------------------- 
  * responsive:
  * pricing
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
-  .plans {
+  .partenaires {
     max-width: 800px;
   }
 
 }
 
 @media only screen and (max-width:1000px) {
-  .s-pricing {
+  .s-partenaires {
     padding-top: 16.8rem;
     padding-bottom: 16.8rem;
   }
@@ -3181,14 +3209,14 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:800px) {
-  .plans {
+  .partenaires {
     max-width: 500px;
   }
 
 }
 
 @media only screen and (max-width:600px) {
-  .s-pricing {
+  .s-partenaires {
     padding-top: 12rem;
     padding-bottom: 9.6rem;
   }
