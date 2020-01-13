@@ -240,6 +240,46 @@
                 }
             ]
         });
+
+        $('.partenaires').slick({
+            arrows: false,
+            dots: true,
+            infinite: true,
+            slidesToShow: 6,
+            slidesToScroll: 2,
+            autoplay: true,
+            pauseOnFocus: true,
+            autoplaySpeed: 4000,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 5
+                    }
+                },
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                },
+                {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }
+
+            ]
+        });
     };
 
 
