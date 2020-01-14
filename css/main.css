@@ -2218,6 +2218,10 @@ input::-moz-focus-inner {
   padding-bottom: 8.8rem;
 }
 
+.icone-feuille {
+  width: 3rem;
+}
+
 /* ------------------------------------------------------------------- 
  * ## home button section
  * ------------------------------------------------------------------- */
@@ -2896,6 +2900,7 @@ html.no-csstransitions .home-content__main {
 
 .centrage-bouton {
   text-align: center;
+  margin-top: 9rem;
 }
 
 /* ===================================================================
@@ -3308,6 +3313,14 @@ html.no-csstransitions .home-content__main {
   width: 42%;
 }
 
+.s-download h3 {
+  color: #FFFFFF;
+}
+
+.s-download .item-feature__icon {
+  color: #FFFFFF
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * download
@@ -3526,7 +3539,7 @@ html.no-csstransitions .home-content__main {
 
 .footer__logo img {
   width: 135px;
-  height: 15px;
+  /* height: 15px; */
 }
 
 /* ------------------------------------------------------------------- 
