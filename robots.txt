@@ -1,0 +1,8 @@
+# robots.txt
+# @url: http://asha.one
+
+
+User-agent: *
+Disallow:
+
+Sitemap: http://asha.one/sitemap.xml

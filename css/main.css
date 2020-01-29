@@ -2450,7 +2450,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:1400px) {
   .s-home .home-image-part {
-    width: calc(50% - 150px);
+    width: 50%;
   }
 
   .home-content h1 {
@@ -2479,9 +2479,9 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:1200px) {
-  .s-home::after {
+  /* .s-home::after {
     width: 2%;
-  }
+  } */
 
   .s-home .home-image-part {
     width: calc(50% - 100px);
@@ -2624,9 +2624,9 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:600px) {
-  .s-home::after {
-    width: 10%;
-  }
+   /* .s-home::after {
+    width: 10%; 
+  } */
 
   .s-home .home-image-part {
     display: none;
@@ -2648,10 +2648,10 @@ html.no-csstransitions .home-content__main {
     padding: 0 45px;
   }
 
-  .home-content__button {
+  /* .home-content__button {
     margin-top: 4.8rem;
     text-align: center;
-  }
+  } */
 
   .home-content__button .btn {
     display: block;
@@ -2686,9 +2686,12 @@ html.no-csstransitions .home-content__main {
     padding: 0 35px;
   }
 
+  
+
 }
 
 @media only screen and (max-width:400px) {
+  
   .s-home {
     min-height: 630px;
   }
@@ -2726,6 +2729,7 @@ html.no-csstransitions .home-content__main {
   .home-content__main {
     padding: 0 25px;
   }
+  
 
 }
 
@@ -2862,6 +2866,15 @@ html.no-csstransitions .home-content__main {
 
 .s-process img {
   vertical-align: bottom;
+}
+
+@media only screen and (max-width: 600px) {
+  .modif {
+    width: auto;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
 }
 
 /* ------------------------------------------------------------------- 
@@ -3732,8 +3745,8 @@ html.no-csstransitions .home-content__main {
   }
 
   .footer__logo img {
-    width: 130px;
-    height: 15px;
+    width: 75px;
+    height: 75px;
   }
 
   .footer__site-links {
