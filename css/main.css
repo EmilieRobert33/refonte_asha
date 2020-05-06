@@ -3321,7 +3321,7 @@ html.no-csstransitions .home-content__main {
 
 .s-download .download-content__image {
   position: absolute;
-  top: 0;
+  top: -30px;
   left: 20px;
   width: 42%;
 }
